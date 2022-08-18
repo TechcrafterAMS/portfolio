@@ -173,6 +173,12 @@
     color: white;
 }
 
+.list-footer button:hover {
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+
 .contact {
     padding: 100px 200px;
     background-color: cornsilk;
@@ -212,4 +218,10 @@
     background-color: red;
     color: white;
  }
+
+ .form-groups input:hover {
+    background-color: blue;
+    color: black;
+    cursor: pointer;
+ } 
 
