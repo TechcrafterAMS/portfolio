@@ -1,3 +1,6 @@
+:root {
+    --tranparent-light-color: rgba(255, 255, 255, .05);
+}
 *{
     padding: 0;
     margin: 0;
@@ -19,12 +22,13 @@
 .nav {
     position: fixed;
     width: 100%;
+    background-color: var(--tranparent-light-color);
 }
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.621);
     color: white;
     padding: 20px 60px;
 }
@@ -71,7 +75,9 @@
 }
 
 .banner-text {
-    background-color: white;
+    background-color: transparent;
+    color: white;
+    text-shadow: 1px 3px 5px black;
     padding: 10px 50px;
     border-radius: 20px 0 20px 0;
 }
