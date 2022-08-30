@@ -17,7 +17,7 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 // Open Menu & Search Pop-up
 const menuToggleIcon = selectElement('#menu-toggle-icon');
-
+ 
 const toggleMenu = () => {
     const mobileMenu = selectElement('#menu');
     mobileMenu.classList.toggle('activated');
@@ -31,7 +31,7 @@ const formCloseBtn = selectElement('#form-close-btn');
 const searchFormContainer = selectElement('#search-form-container');
 
 formOpenBtn.addEventListener('click',() => searchFormContainer.classList.add('activated'));
-
+ 
 formCloseBtn.addEventListener('click',() => searchFormContainer.classList.remove('activated'));
 // Close Search Form Pop-up on ESC Press
 window.addEventListener('keyup', event => {
@@ -56,7 +56,7 @@ themeToggleBtn.addEventListener('click', () => {
     }
 });
 // Swiper
-const swiper = new swiper('.swiper',{
+var swiper = new Swiper('.swiper',{
     slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
@@ -64,8 +64,12 @@ const swiper = new swiper('.swiper',{
         prevEl: '.swiper-button-prev'
     },
     pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true
     },
+    loop: true,
+    loopedSlides: 50,
+    grabCursor: true,
     breakpoints: {
         700: {
             slidesPerView: 2
@@ -74,5 +78,8 @@ const swiper = new swiper('.swiper',{
             slidesPerView: 3
         }
 
+    },
+    autoplay: {
+        delay: 1500
     }
 })

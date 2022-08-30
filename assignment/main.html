@@ -8,9 +8,10 @@
     <link rel="icon" type="image/png" sizes="32*32" class="website-icon" href="./harun.jpg">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./swiper.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header --> 
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="./main.html">
@@ -48,8 +49,8 @@
 
             <div class="list list-right">
                 <button class="btn place-items-center" id="theme-toggle-btn">
-                    <i class="fa fa-arrow-up sun-icon"></i>
-                    <i class="fa fa-arrow-down moon-icon"></i>
+                    <i class="fa fa-sun-o sun-icon"></i>
+                    <i class="fa fa-moon-o moon-icon"></i>
                 </button>
                 <button class="btn place-items-center" id="search-icon">
                     <i class="fa fa-search search-line"></i>
@@ -70,7 +71,7 @@
     <div class="search-form-container container" id="search-form-container">
         <div class="form-container-inner">
             <form action="" class="form">
-                <input type="text" class="form-input" placeholder="What are you looking for?">
+                <input type="search" class="form-input" placeholder="What are you looking for?">
                 <button class="btn form-btn" type="submit" id="search-icon">
                     <i class="fa fa-search"></i>
                 </button>
@@ -82,6 +83,7 @@
             <i class="fa fa-close"></i>
         </button>
     </div>
+    <div class="flex">
     <!-- Featured Article -->
     <section class="featured-articles section-header-offset">
         <div class="featured-articles-container container d-grid">
@@ -241,7 +243,7 @@
                         </div>
                     </a>
                     <a href="" class="article swiper-slide">
-                        <img src="./three.png" alt="" class="article-image">
+                        <img src="./two.png" alt="" class="article-image">
                         <div class="article-data-container">
                             <div class="article-data">
                                 <span>Sept 16th 2019</span>
@@ -296,8 +298,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="swiper-button-prev swiper-controls"><i class="fa fa-angle-left"></i></div>
-                <div class="swiper-button-next swiper-controls"><i class="fa fa-angle-right"></i></div>
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -545,7 +547,7 @@
         </div>
     </footer>
     <!-- Swiper js -->
-
+    <script src="./swiper.js"></script>
     <!-- Custom Script -->
     <script src="./main.js"></script>
 
